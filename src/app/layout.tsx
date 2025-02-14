@@ -1,11 +1,12 @@
-import { Lato } from "next/font/google";
-import "./global.css";
-import { Layout } from "@/components/common/layout/Layout";
-import { Header } from "@/components/common/headerNav/HeaderNav";
+import { Lato } from 'next/font/google';
+import './global.css';
+import { Layout } from '@/components/common/layout/Layout';
+import { Header } from '@/components/common/headerNav/HeaderNav';
 
 const lato = Lato({
-  display: "swap",
-  weight: ["400", "700"],
+  display: 'swap',
+  weight: ['400', '700'],
+  subsets: ['latin-ext'],
 });
 
 interface RootLayoutProps {
