@@ -1,12 +1,15 @@
 .headerNav {
   background-color: var(--neutral90);
-  padding: var(--spacing-lg);
+  height: var(--header-height);
+  display: flex;
+  padding-inline: var(--spacing-lg);
 }
 
 .headerNavContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-basis: 100%;
   max-width: var(--layout-width);
   margin-inline: auto;
 }

@@ -1,4 +1,4 @@
-import styles from "./layout.module.css";
+import styles from './layout.module.css';
 
 interface Layout {
   children: React.ReactNode;

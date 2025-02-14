@@ -39,6 +39,8 @@ html {
   --font-normal: 400;
 
   --layout-width: 60rem;
+  --header-height: 4.25rem;
+  --footer-height: 3rem;
 }
 
 body {

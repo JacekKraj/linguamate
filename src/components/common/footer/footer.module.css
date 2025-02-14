@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--layout-width);
+  margin-inline: auto;
+  height: var(--footer-height);
+  color: var(--neutral60);
+  font-size: var(--font-sm);
+}

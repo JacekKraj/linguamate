@@ -2,6 +2,7 @@ import { Lato } from 'next/font/google';
 import './global.css';
 import { Layout } from '@/components/common/layout/Layout';
 import { Header } from '@/components/common/headerNav/HeaderNav';
+import { Footer } from '@/components/common/footer/Footer';
 
 const lato = Lato({
   display: 'swap',
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body>
         <Header />
         <Layout>{children}</Layout>
+        <Footer />
       </body>
     </html>
   );
