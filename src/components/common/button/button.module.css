@@ -1,0 +1,17 @@
+.button {
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-md);
+  display: inline-block;
+}
+
+.buttonPrimaryOutline {
+  background-color: transparent;
+  border: 1px solid var(--neutral10);
+  color: var(--neutral10);
+  text-transform: uppercase;
+}
+
+.buttonPrimaryOutline:hover {
+  color: var(--primary30);
+  border-color: var(--primary30);
+}

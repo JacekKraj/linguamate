@@ -5,5 +5,9 @@ interface Layout {
 }
 
 export const Layout = ({ children }: Layout) => {
-  return <div className={styles.layout}>{children}</div>;
+  return (
+    <main className={styles.layout}>
+      <div className={styles.layoutContent}>{children}</div>
+    </main>
+  );
 };

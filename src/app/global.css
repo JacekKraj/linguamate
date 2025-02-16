@@ -16,6 +16,13 @@ html {
   --neutral80: #2e343c;
   --neutral90: #171a1e;
   --neutral100: #000000;
+  --primary05: #e5e5fa;
+  --primary10: #ccccf5;
+  --primary20: #9999eb;
+  --primary30: #6666e0;
+  --primary50: #0000cc;
+  --primary60: #0000a3;
+  --primary90: #000029;
 
   --spacing-xs: 0.125rem;
   --spacing-sm: 0.25rem;
@@ -34,6 +41,8 @@ html {
   --font-sm: 0.875rem;
   --font-md: 1rem;
   --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-xxl: 2rem;
 
   --font-bold: 700;
   --font-normal: 400;

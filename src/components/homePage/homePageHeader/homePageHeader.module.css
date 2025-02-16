@@ -1,0 +1,10 @@
+.homePageHeader {
+  font-size: var(--font-lg);
+  color: var(--neutral10);
+  font-weight: var(--font-normal);
+  margin-bottom: 5rem;
+  margin-top: var(--spacing-xxxxxl);
+  text-align: center;
+  max-width: 40rem;
+  margin-inline: auto;
+}

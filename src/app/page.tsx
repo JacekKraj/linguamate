@@ -1,3 +1,11 @@
+import { HomePageArticleLinks } from '@/components/homePage/homePageArticeLinks/HomePageArticleLinks';
+import { HomePageHeader } from '@/components/homePage/homePageHeader/HomePageHeader';
+
 export default function Page() {
-  return <p>Home page</p>;
+  return (
+    <>
+      <HomePageHeader />
+      <HomePageArticleLinks />
+    </>
+  );
 }

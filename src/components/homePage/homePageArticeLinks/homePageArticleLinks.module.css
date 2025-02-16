@@ -1,0 +1,5 @@
+.homePageArticleLinksHeader {
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--neutral60);
+  color: var(--primary20);
+}
