@@ -2,7 +2,11 @@ import { ArticleLink } from '@/components/common/articleLinks/ArticeLink';
 import styles from './articleLinks.module.css';
 import { LinkButton } from '@/components/common/linkButton/LinkButton';
 
-export const ArticleLinks = () => {
+interface ArticleLinksProps {
+  isSeeMore?: boolean;
+}
+
+export const ArticleLinks = ({ isSeeMore = true }: ArticleLinksProps) => {
   return (
     <div className={styles.articleLinksContainer}>
       <div className={styles.articleLinks}>
@@ -25,9 +29,11 @@ export const ArticleLinks = () => {
           minsRead={5}
         />
       </div>
-      <LinkButton href="/articles" variant="primary-outline">
-        See more
-      </LinkButton>
+      {isSeeMore && (
+        <LinkButton href="/articles" variant="primary-outline">
+          See more
+        </LinkButton>
+      )}
     </div>
   );
 };
