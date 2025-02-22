@@ -40,16 +40,18 @@ html {
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
   --font-md: 1rem;
-  --font-lg: 1.25rem;
-  --font-xl: 1.5rem;
-  --font-xxl: 2rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-xxl: 1.5rem;
+  --font-xxxl: 2rem;
 
   --font-bold: 700;
   --font-normal: 400;
+  --font-light: 300;
 
   --layout-width: 60rem;
   --header-height: 4.25rem;
-  --footer-height: 3rem;
+  --footer-height: 4rem;
 }
 
 body {

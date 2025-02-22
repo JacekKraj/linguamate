@@ -6,7 +6,7 @@ import { Footer } from '@/components/common/footer/Footer';
 
 const lato = Lato({
   display: 'swap',
-  weight: ['400', '700'],
+  weight: ['300', '400', '700'],
   subsets: ['latin-ext'],
 });
 

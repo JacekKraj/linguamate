@@ -1,6 +1,8 @@
 import { ArticleLink } from '@/components/common/articleLinks/ArticeLink';
 import styles from './articleLinks.module.css';
 import { LinkButton } from '@/components/common/linkButton/LinkButton';
+import { ArticleNames, ArticleURLS } from '@/utils/articleData/articles';
+import { PATHS } from '@/utils/common/urls';
 
 interface ArticleLinksProps {
   isSeeMore?: boolean;
@@ -11,26 +13,14 @@ export const ArticleLinks = ({ isSeeMore = true }: ArticleLinksProps) => {
     <div className={styles.articleLinksContainer}>
       <div className={styles.articleLinks}>
         <ArticleLink
-          href=""
-          title="How to get british accent?"
-          publicationTimestamp={Date.now()}
-          minsRead={5}
-        />
-        <ArticleLink
-          href=""
-          title="How to improve your vocabulary and even more?"
-          publicationTimestamp={Date.now()}
-          minsRead={5}
-        />
-        <ArticleLink
-          href=""
-          title="How to get british accent?"
+          href={ArticleURLS.BRITISH_ACCENT}
+          title={ArticleNames.BRITISH_ACCENT}
           publicationTimestamp={Date.now()}
           minsRead={5}
         />
       </div>
       {isSeeMore && (
-        <LinkButton href="/articles" variant="primary-outline">
+        <LinkButton href={PATHS.ARTICLES} variant="primary-outline">
           See more
         </LinkButton>
       )}

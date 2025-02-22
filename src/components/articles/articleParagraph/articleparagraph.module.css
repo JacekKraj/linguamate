@@ -1,0 +1,6 @@
+.articleParagraph {
+  color: var(--neutral10);
+  font-size: var(--font-md);
+  line-height: 140%;
+  font-weight: var(--font-light);
+}

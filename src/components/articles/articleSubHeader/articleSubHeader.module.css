@@ -1,0 +1,5 @@
+.articleSubHeader {
+  font-size: var(--font-xxl);
+  margin-top: var(--spacing-xxxl);
+  color: var(--neutral10);
+}

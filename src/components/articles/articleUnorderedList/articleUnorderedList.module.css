@@ -1,0 +1,19 @@
+.articleUnorderedList {
+  padding-left: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.articleUnorderedListItem {
+  color: var(--neutral0);
+  font-size: var(--font-lg);
+  font-weight: var(--font-light);
+  line-height: 140%;
+}
+
+@media (min-width: 1000px) {
+  .articleUnorderedListItem {
+    font-size: var(--font-md);
+  }
+}
