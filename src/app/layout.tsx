@@ -17,6 +17,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={lato.className}>
+      <head>
+        <link rel="icon" href="/images/logoMini.png" sizes="any" />
+      </head>
       <body>
         <Header />
         <Layout>{children}</Layout>

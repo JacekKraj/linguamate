@@ -1,7 +1,7 @@
 import { ArticleLink } from '@/components/common/articleLinks/ArticeLink';
 import styles from './articleLinks.module.css';
 import { LinkButton } from '@/components/common/linkButton/LinkButton';
-import { ArticleNames, ArticleURLS } from '@/utils/articleData/articles';
+import { ArticleNames, articlesData, ArticleURLS } from '@/utils/articleData/articles';
 import { PATHS } from '@/utils/common/urls';
 
 interface ArticleLinksProps {
@@ -15,8 +15,8 @@ export const ArticleLinks = ({ isSeeMore = true }: ArticleLinksProps) => {
         <ArticleLink
           href={ArticleURLS.BRITISH_ACCENT}
           title={ArticleNames.BRITISH_ACCENT}
-          publicationTimestamp={Date.now()}
-          minsRead={5}
+          publicationTimestamp={articlesData[ArticleURLS.BRITISH_ACCENT].publicationTimestamp}
+          minsRead={articlesData[ArticleURLS.BRITISH_ACCENT].minsRead}
         />
       </div>
       {isSeeMore && (
