@@ -5,7 +5,7 @@ import { Header } from '@/components/common/headerNav/HeaderNav';
 import { Footer } from '@/components/common/footer/Footer';
 
 const lato = Lato({
-  display: 'swap',
+  display: 'block',
   weight: ['300', '400', '700'],
   subsets: ['latin-ext'],
 });
