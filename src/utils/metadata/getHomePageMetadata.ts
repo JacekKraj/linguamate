@@ -1,3 +1,4 @@
+import { PATHS } from '@/utils/common/urls';
 import { getMetadataURLBase } from '@/utils/metadata/utils';
 
 interface HomeMetaTags {
@@ -12,7 +13,7 @@ const getMetadataTitle = () => 'Language blog - alternative approach to learn la
 const getMetadataDescription = () =>
   'Learn about alternative apporaches to learn languages. Forget about boring grammar exercsises and heavy textbooks. See how to learn languages as native speakers do.';
 
-const getCanonical = () => '/';
+const getCanonical = () => PATHS.HOME;
 
 const generateHomePageMetaTags = (): HomeMetaTags => {
   const title = getMetadataTitle();

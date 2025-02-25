@@ -6,14 +6,8 @@
 }
 
 .articleUnorderedListItem {
-  color: var(--neutral0);
-  font-size: var(--font-lg);
+  color: var(--neutral10);
+  font-size: var(--font-md);
   font-weight: var(--font-light);
   line-height: 140%;
-}
-
-@media (min-width: 1000px) {
-  .articleUnorderedListItem {
-    font-size: var(--font-md);
-  }
 }
