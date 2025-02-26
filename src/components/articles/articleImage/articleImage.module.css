@@ -9,6 +9,7 @@
 .articleImage {
   margin-inline: auto;
   position: relative !important;
+  object-fit: cover;
 }
 
 @media (min-width: 1000px) {

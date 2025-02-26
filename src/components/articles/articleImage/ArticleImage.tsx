@@ -7,7 +7,7 @@ type ArticleImageProps = ComponentProps<typeof Image>;
 export const ArticleImage = (props: ArticleImageProps) => {
   return (
     <div className={styles.articleImageContainer}>
-      <Image {...props} className={styles.articleImage} fill objectFit="cover" priority />
+      <Image {...props} className={styles.articleImage} fill priority />
     </div>
   );
 };
