@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articleLinks = Object.values(articlesData).map(({ url, publicationTimestamp }) => {
     return {
-      url: `${metadataBase}/${PATHS.ARTICLES}/${url}`,
+      url: `${metadataBase}${PATHS.ARTICLES}/${url}`,
       lastModified: new Date(publicationTimestamp),
       changeFrequency: 'yearly' as const,
       priority: 1,
@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${metadataBase}/${PATHS.ARTICLES}`,
+      url: `${metadataBase}${PATHS.ARTICLES}`,
       lastModified: new Date(latestArticleTimestamp),
       changeFrequency: 'weekly',
       priority: 0.8,
