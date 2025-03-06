@@ -1,6 +1,4 @@
-import { MistakesInLearningArticle } from '@/components/articles/articles/MistakesInLearning';
-import { SpeakBrittishAccentArticle } from '@/components/articles/articles/SpeakBrittishAccentArticle';
-import { ArticleURLS } from '@/utils/articleData/articles';
+import { articlesData, ArticleURLS } from '@/utils/articleData/articles';
 import { getArticlePageMetadata } from '@/utils/metadata/getArticlePageMetadata';
 import { notFound } from 'next/navigation';
 
@@ -17,8 +15,9 @@ export async function generateMetadata(props: PageProps) {
 export default async function Page(props: PageProps) {
   const articleURL = (await props.params).article;
 
-  if (articleURL === ArticleURLS.BRITISH_ACCENT) return <SpeakBrittishAccentArticle />;
-  if (articleURL === ArticleURLS.MISTAKES_IN_LEARNING) return <MistakesInLearningArticle />;
+  const matchingArticleURL = Object.values(ArticleURLS).find((url) => url === articleURL);
+
+  if (matchingArticleURL) return articlesData[matchingArticleURL].component({ props: {} });
 
   notFound();
 }

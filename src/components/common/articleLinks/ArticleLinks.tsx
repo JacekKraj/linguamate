@@ -13,6 +13,12 @@ export const ArticleLinks = ({ isSeeMore = true }: ArticleLinksProps) => {
     <div className={styles.articleLinksContainer}>
       <div className={styles.articleLinks}>
         <ArticleLink
+          href={ArticleURLS.IMPROVE_SPELLING}
+          title={ArticleNames.IMPROVE_SPELLING}
+          publicationTimestamp={articlesData[ArticleURLS.IMPROVE_SPELLING].publicationTimestamp}
+          minsRead={articlesData[ArticleURLS.IMPROVE_SPELLING].minsRead}
+        />
+        <ArticleLink
           href={ArticleURLS.MISTAKES_IN_LEARNING}
           title={ArticleNames.MISTAKES_IN_LEARNING}
           publicationTimestamp={articlesData[ArticleURLS.MISTAKES_IN_LEARNING].publicationTimestamp}
