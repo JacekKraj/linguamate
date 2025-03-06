@@ -1,5 +1,11 @@
-.articleSubHeader {
+.articleSubHeaderH2 {
   font-size: var(--font-xxl);
   margin-top: var(--spacing-xxxl);
+  color: var(--neutral10);
+}
+
+.articleSubHeaderH3 {
+  font-size: var(--font-xl);
+  margin-top: var(--spacing-md);
   color: var(--neutral10);
 }

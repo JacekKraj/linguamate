@@ -1,7 +1,8 @@
+import { ReactNode } from 'react';
 import styles from './articleparagraph.module.css';
 
 interface ArticleParagraphProps {
-  children: string;
+  children: ReactNode;
 }
 
 export const ArticleParagraph = ({ children }: ArticleParagraphProps) => {
