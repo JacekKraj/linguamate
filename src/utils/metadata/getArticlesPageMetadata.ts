@@ -11,7 +11,8 @@ interface ArticlesMetaTags {
 
 const getMetadataTitle = () => 'Browse blog posts about alternative language learning methods';
 
-const getMetadataDescription = () => `Browse posts like: ${ArticleNames.BRITISH_ACCENT};`;
+const getMetadataDescription = () =>
+  `Browse posts like: ${ArticleNames.BRITISH_ACCENT}; ${ArticleNames.IMPROVE_SPELLING}; ${ArticleNames.MISTAKES_IN_LEARNING}`;
 
 const getCanonical = () => `/${PATHS.ARTICLES}`;
 
