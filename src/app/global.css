@@ -52,7 +52,13 @@ html {
 
   --layout-width: 60rem;
   --header-height: 4.25rem;
-  --footer-height: 4rem;
+  --footer-height: 14rem;
+}
+
+@media (min-width: 1000px) {
+  html {
+    --footer-height: 10rem;
+  }
 }
 
 body {
