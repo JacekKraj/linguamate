@@ -7,7 +7,7 @@ export enum ArticleURLS {
   BRITISH_ACCENT = 'how-to-speak-with-british-accent-2-home-exercises',
   MISTAKES_IN_LEARNING = 'common-mistakes-in-learning-a-language',
   IMPROVE_SPELLING = 'how-to-improve-your-spelling-5-home-exercises',
-  FEAR_OF_SPEAKING = 'fear-of-speaking',
+  FEAR_OF_SPEAKING = 'fear-of-speaking-english-how-to-overcome-it',
 }
 
 export enum ArticleNames {
