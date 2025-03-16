@@ -18,11 +18,11 @@ export const Footer = () => {
           <Link className={styles.footerLinkItem} href={ArticleURLS.BRITISH_ACCENT}>
             {ArticleNames.BRITISH_ACCENT}
           </Link>
-          <Link className={styles.footerLinkItem} href={ArticleURLS.MISTAKES_IN_LEARNING}>
-            {ArticleNames.MISTAKES_IN_LEARNING}
-          </Link>
           <Link className={styles.footerLinkItem} href={ArticleURLS.IMPROVE_SPELLING}>
             {ArticleNames.IMPROVE_SPELLING}
+          </Link>
+          <Link className={styles.footerLinkItem} href={ArticleURLS.FEAR_OF_SPEAKING}>
+            {ArticleNames.FEAR_OF_SPEAKING}
           </Link>
         </div>
       </div>

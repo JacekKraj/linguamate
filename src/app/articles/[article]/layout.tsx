@@ -1,4 +1,4 @@
-import { ArticleStructuredData } from '@/utils/structuredData/articles/ArticleStructuredData';
+import { ArticleStructuredData } from '@/utils/structuredData/ArticleStructuredData';
 
 interface LayoutProps {
   children: React.ReactNode;

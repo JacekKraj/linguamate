@@ -10,10 +10,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     (a, b) => b.publicationTimestamp - a.publicationTimestamp,
   )[0].publicationTimestamp;
 
-  const articleLinks = Object.values(articlesData).map(({ url, publicationTimestamp }) => {
+  const articleLinks = Object.values(articlesData).map(({ url, modificationTimestamp }) => {
     return {
       url: `${metadataBase}${PATHS.ARTICLES}/${url}`,
-      lastModified: new Date(publicationTimestamp),
+      lastModified: new Date(modificationTimestamp),
       changeFrequency: 'yearly' as const,
       priority: 1,
     };

@@ -1,5 +1,6 @@
 import { ArticleLinks } from '@/components/common/articleLinks/ArticleLinks';
 import { PageHeader } from '@/components/common/pageHeader/PageHeader';
+import { articlesData } from '@/utils/articleData/articles';
 import { getArticlesPageMetadata } from '@/utils/metadata/getArticlesPageMetadata';
 
 export function generateMetadata() {
@@ -12,7 +13,7 @@ export default function Page() {
       <PageHeader>
         Browse all our articles explaining alternative approaches to learning languages.
       </PageHeader>
-      <ArticleLinks isSeeMore={false} />
+      <ArticleLinks isSeeMore={false} articles={Object.values(articlesData)} />
     </>
   );
 }
