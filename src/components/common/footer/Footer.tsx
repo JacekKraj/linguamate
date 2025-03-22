@@ -9,8 +9,8 @@ export const Footer = () => {
       <div className={styles.footerLinksSection}>
         <div className={styles.footerLinkGroup}>
           <p className={styles.footerLinkGroupHeader}>Useful language tools</p>
-          <a className={styles.footerLinkItem} href="https://merienda.pl/">
-            Merienda.pl – Learn Spanish in just 5 minutes a day
+          <a className={styles.footerLinkItem} href="https://www.espanolconlama.com/">
+            Espanolconlama.com – Learn Spanish in 5 minutes a day
           </a>
         </div>
         <div className={styles.footerLinkGroup}>
