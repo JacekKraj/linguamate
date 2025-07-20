@@ -1,1 +1,1 @@
-tbd
+https://linguolog.com/
